@@ -20,5 +20,6 @@ It's more simple than looks like, just follow the simple steps.
   ```
   qemu-system-x86_64 -enable-kvm -cdrom ARCH.iso -boot -drive file=yourharddisk.img -m 4G -bios /path/to/OVMF.fd
   ```
-  In my case, I decided to use `4G` of ram and to be able to boot with uefi also you must attach the `OVMF.fd` file.
+  In my case, I decided to use `4G` of ram and to be able to boot with uefi you must attach the `OVMF.fd` file.
+* Then you can follow the [official guide](https://wiki.archlinux.org/title/installation_guide) to install properly arch linux.
 
