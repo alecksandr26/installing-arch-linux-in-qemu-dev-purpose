@@ -7,6 +7,7 @@ It's more simple than looks like, just follow the simple steps.
   ```
 ## Prepare the virtual machine
 * First, create a hard disk with `qemu`, you can set your desired size.
+
   ```
   qemu-img create -f qcow2 yourharddisk.img 10G
   ```
