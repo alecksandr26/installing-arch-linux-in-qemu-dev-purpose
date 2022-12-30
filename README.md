@@ -6,5 +6,9 @@ It's more simple than looks like, just follow the simple steps.
   base-devel fakeroot bc qemu
   ```
 ## Prepare the virtual machine
-* First, get the latest Archlinux image from [here](https://archlinux.org/download/).
-* 
+* First, create a hard disk with `qemu`, you can set your desired size.
+  ```
+  qemu-img create -f qcow2 yourharddisk.img 10G
+  ```
+* Then, download the latest Archlinux image from [here](https://archlinux.org/download/).
+
