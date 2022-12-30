@@ -1,4 +1,4 @@
-# Running Archlinux with QEMU
+# Running Archlinux in QEMU
 It's more simple than looks like, just follow the simple steps.
 ## The required dependencies.
 * Install the necessary dependencies or tools to be able to make your archlinux setup.
