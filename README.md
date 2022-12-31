@@ -1,5 +1,5 @@
-# Installing Arch Linux in QEMU
-It's more simple than looks like, just follow the simple steps.
+# Installing a minimal Arch Linux in QEMU
+This is a simple guide of how to install a minimal version of arch linux with your kernel configuration.
 # Table of contents
 1. [The-required-dependencies](#The-required-dependencies)
 2. [Prepare-the-virtual-machine](#Prepare-the-virtual-machine)
@@ -9,7 +9,7 @@ It's more simple than looks like, just follow the simple steps.
 ## The-required-dependencies.
 * Install the necessary dependencies or tools to be able to make your archlinux setup.
   ```
-  base-devel fakeroot bc qemu ovmf
+  base-devel fakeroot bc qemu
   ```
 ## Prepare-the-virtual-machine
 * First, create a hard disk with `qemu`, you can set your desired size.
@@ -24,9 +24,16 @@ It's more simple than looks like, just follow the simple steps.
 * To install arch linux on the disk image, you should attach the iso file and the image file.
 
   ```
-  qemu-system-x86_64 -enable-kvm -cdrom ARCH.iso -boot -drive file=yourharddisk.img -m 4G -bios /path/to/OVMF.fd
+  qemu-system-x86_64 -enable-kvm -cdrom ARCH.iso -boot -drive file=yourharddisk.img -m 4G
   ```
-  In my case, I decided to use `4G` of ram and to be able to boot with uefi you must attach the `OVMF.fd` file.
+  In my case, I decided to use `4G` of ram.
+  
+  If you want to boot with `uefi` you must install `ovmf` package and attach the `OVMF.fd` file.
+  
+  ```
+  -bios /path/to/OVMF.fd
+  ```
+  
 * Then you can follow the [official guide](https://wiki.archlinux.org/title/installation_guide) to install arch linux properly.
 
 ## Kernel-configuration
