@@ -1,4 +1,4 @@
-# Installing a minimal Arch Linux in QEMU
+# Installing a minimal Arch Linux in QEMU for dev purpose
 This is a simple guide on how to install a minimal version of Arch Linux with your kernel-compiled configuration for a developing purpose.
 # Table of contents
 1. [The-required-dependencies](#The-required-dependencies)
