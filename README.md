@@ -67,7 +67,7 @@ It's more simple than looks like, just follow the simple steps.
   Remember to specify the root partition.
 
 ## Tips
-   * To optimize the virtual machine, you should use these flags.
+* To optimize the virtual machine, you should use these flags.
 
    ```
    -enable-kvm
