@@ -1,4 +1,4 @@
-# Running Archlinux in QEMU
+# Running Arch Linux in QEMU
 It's more simple than looks like, just follow the simple steps.
 # Table of contents
 1. [The-required-dependencies](#The-required-dependencies)
