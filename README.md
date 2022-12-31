@@ -72,7 +72,7 @@ This is a simple guide on how to install a minimal version of Arch Linux with yo
   ```
   qemu-system-x86_64 -enable-kvm -hda yourharddisk.img -m 4G -kernel /path/to/kernelimage -append "root=/dev/sda* console=ttyS0 rw"
   ```
-  Remember to specify the root partition `-append "root=/dev/sda*`
+  Remember to specify the root partition `-append "root=/dev/sda*`.
 
 ## Tips
 * To optimize the virtual machine, you should use these flags.
