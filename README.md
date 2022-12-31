@@ -5,6 +5,7 @@ It's more simple than looks like, just follow the simple steps.
 2. [Prepare-the-virtual-machine](#Prepare-the-virtual-machine)
 3. [Kernel-configuration](#Kernel-configuration)
 4. [Boot-your-virtual-machine](#Boot-your-virtual-machine)
+5. [Tips](#Tips)
 ## The-required-dependencies.
 * Install the necessary dependencies or tools to be able to make your archlinux setup.
   ```
@@ -64,4 +65,23 @@ It's more simple than looks like, just follow the simple steps.
   qemu-system-x86_64 -enable-kvm -hda yourharddisk.img -m 4G -kernel /path/to/kernelimage -append "root=/dev/sda* console=ttyS0 rw"
   ```
   Remember to specify the root partition.
+
+## Tips
+   * To accelerate the graphics you should use these flags.
+
+   ```
+   -enable-kvm
+   -cpu host
+   -smp 4
+   -vga qxl
+   ```
+   cpu host: To stop emulating the cpu.
+   
+   smp: To specify the number of threads to be used by the cpu.
+
+   vga qxl: Is a paravirtual graphics driver with 2D support, you can use another option [here](https://wiki.archlinux.org/title/QEMU#Graphic_card).
+
+   
+   
+
 
