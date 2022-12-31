@@ -1,16 +1,16 @@
 # Running Archlinux in QEMU
 It's more simple than looks like, just follow the simple steps.
 # Table of contents
-1. [The-required-dependencies](##The required dependencies)
-2. [Prepare-the-virtual-machine](##Prepare the virtual machine)
-3. [Kernel-configuration](##Kernel configuration)
-4. [Boot-your-virtual-machine](##Boot your virtual machine)
-## The required dependencies.
+1. [The-required-dependencies](##Prepare-the-virtual-machine)
+2. [Prepare-the-virtual-machine](##Prepare-the-virtual-machine)
+3. [Kernel-configuration](##Kernel-configuration)
+4. [Boot-your-virtual-machine](##Boot-your-virtual-machine)
+## The-required-dependencies.
 * Install the necessary dependencies or tools to be able to make your archlinux setup.
   ```
   base-devel fakeroot bc qemu ovmf
   ```
-## Prepare the virtual machine
+## Prepare-the-virtual-machine
 * First, create a hard disk with `qemu`, you can set your desired size.
 
   ```
@@ -28,7 +28,7 @@ It's more simple than looks like, just follow the simple steps.
   In my case, I decided to use `4G` of ram and to be able to boot with uefi you must attach the `OVMF.fd` file.
 * Then you can follow the [official guide](https://wiki.archlinux.org/title/installation_guide) to install arch linux properly.
 
-## Kernel configuration
+## Kernel-configuration
 * Go [here](https://www.kernel.org/) and download the lasted version of the linux kernel and decompress the file.
 
   ```
@@ -57,7 +57,7 @@ It's more simple than looks like, just follow the simple steps.
   kernel-build/arch/x86_64/boot/kernelimage
   ```
 
-## Boot your virtual machine
+## Boot-your-virtual-machine
 * To boot the virtual matchine, you need to specified the root partation where you install the arch linux.
 
   ```
