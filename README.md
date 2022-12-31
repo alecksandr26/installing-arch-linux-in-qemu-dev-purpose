@@ -33,6 +33,7 @@ This is a simple guide of how to install a minimal version of arch linux with yo
   ```
   -bios /path/to/OVMF.fd
   ```
+  It is usally at this path `/usr/share/ovmf/`.
   
 * Then you can follow the [official guide](https://wiki.archlinux.org/title/installation_guide) to install arch linux properly.
 
