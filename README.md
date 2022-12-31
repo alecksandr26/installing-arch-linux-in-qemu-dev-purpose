@@ -56,7 +56,7 @@ It's more simple than looks like, just follow the simple steps.
 * To boot the virtual matchine, you need to specified the root partation where you install the arch linux.
 
   ```
-  qemu-system-x86_64 -enable-kvm -hda yourharddisk.img -m 4G -kernel /path/to/kernelimage -append "root=/dev/sda*"
+  qemu-system-x86_64 -enable-kvm -hda yourharddisk.img -m 4G -kernel /path/to/kernelimage -append "root=/dev/sda* console=ttyS0 rw"
   ```
   Remember to specify the root partition.
 
