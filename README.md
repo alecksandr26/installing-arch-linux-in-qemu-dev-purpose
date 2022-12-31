@@ -1,5 +1,5 @@
 # Installing a minimal Arch Linux in QEMU
-This is a simple guide of how to install a minimal version of arch linux with your kernel configuration.
+This is a simple guide on how to install a minimal version of Arch Linux with your kernel-compiled configuration for a developing purpose.
 # Table of contents
 1. [The-required-dependencies](#The-required-dependencies)
 2. [Prepare-the-virtual-machine](#Prepare-the-virtual-machine)
