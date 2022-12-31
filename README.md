@@ -1,7 +1,7 @@
 # Running Archlinux in QEMU
 It's more simple than looks like, just follow the simple steps.
 # Table of contents
-1. [The-required-dependencies](#Prepare-the-virtual-machine)
+1. [The-required-dependencies](#The-required-dependencies)
 2. [Prepare-the-virtual-machine](#Prepare-the-virtual-machine)
 3. [Kernel-configuration](#Kernel-configuration)
 4. [Boot-your-virtual-machine](#Boot-your-virtual-machine)
