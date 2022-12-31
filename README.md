@@ -24,4 +24,39 @@ It's more simple than looks like, just follow the simple steps.
 * Then you can follow the [official guide](https://wiki.archlinux.org/title/installation_guide) to install arch linux properly.
 
 ## Kernel configuration
-* Go [here](https://www.kernel.org/) and download the lasted linux kernel.
+* Go [here](https://www.kernel.org/) and download the lasted version of the linux kernel and decompress the file.
+
+  ```
+  tar -xf linux-*.*.*.tar.xz
+  ```
+* Create an output directory.
+
+  ```
+  mkdir kernel-build
+  ```
+
+* I decided to go with the default configuration of the kernel compilation.
+
+  ```
+  make O=../kernel-build defconfig
+  ```
+
+* Then, compile the kernel.
+
+  ```
+  make O=../kernel-build -j4 kernelimage
+  ```
+  At the end, you should finish with your kernel image at this path.
+
+  ```
+  kernel-build/arch/x86_64/boot/kernelimage
+  ```
+
+## Boot your virtual machine
+* To boot the virtual matchine, you need to specified the root partation where you install the arch linux.
+
+  ```
+  qemu-system-x86_64 -enable-kvm -hda yourharddisk.img -m 4G -kernel /path/to/kernelimage -append "root=/dev/sda*"
+  ```
+  Remember to specify the root partition.
+
