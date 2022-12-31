@@ -83,6 +83,8 @@ This is a simple guide on how to install a minimal version of Arch Linux with yo
    -smp 4
    -vga qxl
    ```
+   enable-kvm: KVM (Kernel-based Virtual Machine) full virtualization.
+   
    cpu host: To stop emulating the cpu.
    
    smp: To specify the number of threads to be used by the cpu.
